@@ -22,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         mContacts = new ArrayList<>();
-        mContacts.add("Alessander Leite");
+
+        for (int i = 0; i < 100; i++) {
+            mContacts.add("Alessander Leite #" + i);
+        }
 
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this);
